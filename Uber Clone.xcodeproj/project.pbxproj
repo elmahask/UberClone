@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		723FABFEB234A50D3341999B /* Pods_Uber_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26ABFA1ADE2BF2C29503F9CB /* Pods_Uber_Clone.framework */; };
+		F11A80A522E7608F00D23A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11A80A422E7608F00D23A2C /* AppDelegate.swift */; };
+		F11A80A722E7608F00D23A2C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11A80A622E7608F00D23A2C /* HomeVC.swift */; };
+		F11A80AA22E7608F00D23A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11A80A822E7608F00D23A2C /* Main.storyboard */; };
+		F11A80AC22E7609300D23A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F11A80AB22E7609300D23A2C /* Assets.xcassets */; };
+		F11A80AF22E7609300D23A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11A80AD22E7609300D23A2C /* LaunchScreen.storyboard */; };
+		F11A80BD22E7A23E00D23A2C /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11A80BC22E7A23E00D23A2C /* GradientView.swift */; };
+		F11A80BF22E7A64300D23A2C /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11A80BE22E7A64300D23A2C /* RoundImageView.swift */; };
+		F11A80C122E7AA4F00D23A2C /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11A80C022E7AA4F00D23A2C /* RoundedShadowView.swift */; };
+		F11A80C322E7AF5700D23A2C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11A80C222E7AF5700D23A2C /* CircleView.swift */; };
+		F11A80C522E7B8C800D23A2C /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11A80C422E7B8C800D23A2C /* RoundedShadowButton.swift */; };
+		F122F20822EA009400B4AAEE /* UIViewExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122F20722EA009400B4AAEE /* UIViewExts.swift */; };
+		F122F20A22EA031D00B4AAEE /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F122F20922EA031D00B4AAEE /* Authorization.storyboard */; };
+		F122F20C22EA129700B4AAEE /* AuthorizedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122F20B22EA129700B4AAEE /* AuthorizedVC.swift */; };
+		F122F20E22EA17F600B4AAEE /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122F20D22EA17F600B4AAEE /* RoundedCornerTextField.swift */; };
+		F122F21022EA2EEA00B4AAEE /* UIViewControllerExts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122F20F22EA2EEA00B4AAEE /* UIViewControllerExts.swift */; };
+		F122F21322EA6BE400B4AAEE /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F122F21222EA6BE400B4AAEE /* DataServices.swift */; };
+		F15AB81222E897A600EC8A41 /* LeftSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AB81122E897A600EC8A41 /* LeftSideMenuVC.swift */; };
+		F15AB81422E8981D00EC8A41 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AB81322E8981D00EC8A41 /* ContainerVC.swift */; };
+		F15AB81722E89FB800EC8A41 /* ViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15AB81622E89FB800EC8A41 /* ViewDelegate.swift */; };
+		F17C56A322EB482800E20CFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F17C56A222EB482800E20CFD /* GoogleService-Info.plist */; };
+		F17C56A522EB535100E20CFD /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17C56A422EB535100E20CFD /* AuthManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26ABFA1ADE2BF2C29503F9CB /* Pods_Uber_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C9E8DD984842F0AD96BB78 /* Pods-Uber Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber Clone.release.xcconfig"; path = "Target Support Files/Pods-Uber Clone/Pods-Uber Clone.release.xcconfig"; sourceTree = "<group>"; };
+		ED73AEF14E6F5B3C1BFB7A60 /* Pods-Uber Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber Clone.debug.xcconfig"; path = "Target Support Files/Pods-Uber Clone/Pods-Uber Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		F11A80A122E7608F00D23A2C /* Uber Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11A80A422E7608F00D23A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F11A80A622E7608F00D23A2C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F11A80A922E7608F00D23A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F11A80AB22E7609300D23A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F11A80AE22E7609300D23A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F11A80B022E7609300D23A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F11A80BC22E7A23E00D23A2C /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		F11A80BE22E7A64300D23A2C /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		F11A80C022E7AA4F00D23A2C /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		F11A80C222E7AF5700D23A2C /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		F11A80C422E7B8C800D23A2C /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
+		F122F20722EA009400B4AAEE /* UIViewExts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExts.swift; sourceTree = "<group>"; };
+		F122F20922EA031D00B4AAEE /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		F122F20B22EA129700B4AAEE /* AuthorizedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizedVC.swift; sourceTree = "<group>"; };
+		F122F20D22EA17F600B4AAEE /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		F122F20F22EA2EEA00B4AAEE /* UIViewControllerExts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExts.swift; sourceTree = "<group>"; };
+		F122F21222EA6BE400B4AAEE /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		F15AB81122E897A600EC8A41 /* LeftSideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSideMenuVC.swift; sourceTree = "<group>"; };
+		F15AB81322E8981D00EC8A41 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
+		F15AB81622E89FB800EC8A41 /* ViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDelegate.swift; sourceTree = "<group>"; };
+		F17C56A222EB482800E20CFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F17C56A422EB535100E20CFD /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F11A809E22E7608F00D23A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				723FABFEB234A50D3341999B /* Pods_Uber_Clone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		176F980CAD287F6876F6E22D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED73AEF14E6F5B3C1BFB7A60 /* Pods-Uber Clone.debug.xcconfig */,
+				53C9E8DD984842F0AD96BB78 /* Pods-Uber Clone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7054C0236858FD304DDE3259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26ABFA1ADE2BF2C29503F9CB /* Pods_Uber_Clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F11A809822E7608F00D23A2C = {
+			isa = PBXGroup;
+			children = (
+				F11A80A322E7608F00D23A2C /* Uber Clone */,
+				F11A80A222E7608F00D23A2C /* Products */,
+				176F980CAD287F6876F6E22D /* Pods */,
+				7054C0236858FD304DDE3259 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F11A80A222E7608F00D23A2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F11A80A122E7608F00D23A2C /* Uber Clone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F11A80A322E7608F00D23A2C /* Uber Clone */ = {
+			isa = PBXGroup;
+			children = (
+				F122F21122EA6B4000B4AAEE /* Services */,
+				F122F20622EA006700B4AAEE /* Extensions */,
+				F15AB81522E89F8E00EC8A41 /* Protocol */,
+				F11A80B822E79A0900D23A2C /* Model */,
+				F11A80B722E79A0000D23A2C /* View */,
+				F11A80B622E799F700D23A2C /* Controller */,
+				F11A80BA22E79A5900D23A2C /* Core */,
+				F11A80BB22E79A7A00D23A2C /* Configuration */,
+				F11A80B922E79A2C00D23A2C /* Resources */,
+			);
+			path = "Uber Clone";
+			sourceTree = "<group>";
+		};
+		F11A80B622E799F700D23A2C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F11A80A622E7608F00D23A2C /* HomeVC.swift */,
+				F15AB81122E897A600EC8A41 /* LeftSideMenuVC.swift */,
+				F15AB81322E8981D00EC8A41 /* ContainerVC.swift */,
+				F122F20B22EA129700B4AAEE /* AuthorizedVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F11A80B722E79A0000D23A2C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F11A80A822E7608F00D23A2C /* Main.storyboard */,
+				F11A80BC22E7A23E00D23A2C /* GradientView.swift */,
+				F11A80BE22E7A64300D23A2C /* RoundImageView.swift */,
+				F11A80C022E7AA4F00D23A2C /* RoundedShadowView.swift */,
+				F11A80C222E7AF5700D23A2C /* CircleView.swift */,
+				F11A80C422E7B8C800D23A2C /* RoundedShadowButton.swift */,
+				F122F20922EA031D00B4AAEE /* Authorization.storyboard */,
+				F122F20D22EA17F600B4AAEE /* RoundedCornerTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F11A80B822E79A0900D23A2C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F11A80B922E79A2C00D23A2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F11A80AD22E7609300D23A2C /* LaunchScreen.storyboard */,
+				F11A80AB22E7609300D23A2C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F11A80BA22E79A5900D23A2C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F11A80A422E7608F00D23A2C /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F11A80BB22E79A7A00D23A2C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F11A80B022E7609300D23A2C /* Info.plist */,
+				F17C56A222EB482800E20CFD /* GoogleService-Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		F122F20622EA006700B4AAEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F122F20722EA009400B4AAEE /* UIViewExts.swift */,
+				F122F20F22EA2EEA00B4AAEE /* UIViewControllerExts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F122F21122EA6B4000B4AAEE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F122F21222EA6BE400B4AAEE /* DataServices.swift */,
+				F17C56A422EB535100E20CFD /* AuthManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F15AB81522E89F8E00EC8A41 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F15AB81622E89FB800EC8A41 /* ViewDelegate.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F11A80A022E7608F00D23A2C /* Uber Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F11A80B322E7609300D23A2C /* Build configuration list for PBXNativeTarget "Uber Clone" */;
+			buildPhases = (
+				1D3A91C008BBBB769FF29819 /* [CP] Check Pods Manifest.lock */,
+				F11A809D22E7608F00D23A2C /* Sources */,
+				F11A809E22E7608F00D23A2C /* Frameworks */,
+				F11A809F22E7608F00D23A2C /* Resources */,
+				2B93B867DFD746076DE7B682 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Uber Clone";
+			productName = "Uber Clone";
+			productReference = F11A80A122E7608F00D23A2C /* Uber Clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F11A809922E7608F00D23A2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Wael M Elmahask";
+				TargetAttributes = {
+					F11A80A022E7608F00D23A2C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F11A809C22E7608F00D23A2C /* Build configuration list for PBXProject "Uber Clone" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F11A809822E7608F00D23A2C;
+			productRefGroup = F11A80A222E7608F00D23A2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F11A80A022E7608F00D23A2C /* Uber Clone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F11A809F22E7608F00D23A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F122F20A22EA031D00B4AAEE /* Authorization.storyboard in Resources */,
+				F11A80AF22E7609300D23A2C /* LaunchScreen.storyboard in Resources */,
+				F17C56A322EB482800E20CFD /* GoogleService-Info.plist in Resources */,
+				F11A80AC22E7609300D23A2C /* Assets.xcassets in Resources */,
+				F11A80AA22E7608F00D23A2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D3A91C008BBBB769FF29819 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Uber Clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B93B867DFD746076DE7B682 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uber Clone/Pods-Uber Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uber Clone/Pods-Uber Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uber Clone/Pods-Uber Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F11A809D22E7608F00D23A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F122F21322EA6BE400B4AAEE /* DataServices.swift in Sources */,
+				F11A80C522E7B8C800D23A2C /* RoundedShadowButton.swift in Sources */,
+				F11A80C322E7AF5700D23A2C /* CircleView.swift in Sources */,
+				F11A80A722E7608F00D23A2C /* HomeVC.swift in Sources */,
+				F15AB81422E8981D00EC8A41 /* ContainerVC.swift in Sources */,
+				F11A80BF22E7A64300D23A2C /* RoundImageView.swift in Sources */,
+				F122F20C22EA129700B4AAEE /* AuthorizedVC.swift in Sources */,
+				F11A80C122E7AA4F00D23A2C /* RoundedShadowView.swift in Sources */,
+				F122F20822EA009400B4AAEE /* UIViewExts.swift in Sources */,
+				F17C56A522EB535100E20CFD /* AuthManager.swift in Sources */,
+				F15AB81222E897A600EC8A41 /* LeftSideMenuVC.swift in Sources */,
+				F15AB81722E89FB800EC8A41 /* ViewDelegate.swift in Sources */,
+				F122F20E22EA17F600B4AAEE /* RoundedCornerTextField.swift in Sources */,
+				F11A80A522E7608F00D23A2C /* AppDelegate.swift in Sources */,
+				F122F21022EA2EEA00B4AAEE /* UIViewControllerExts.swift in Sources */,
+				F11A80BD22E7A23E00D23A2C /* GradientView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F11A80A822E7608F00D23A2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F11A80A922E7608F00D23A2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F11A80AD22E7609300D23A2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F11A80AE22E7609300D23A2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F11A80B122E7609300D23A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F11A80B222E7609300D23A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F11A80B422E7609300D23A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED73AEF14E6F5B3C1BFB7A60 /* Pods-Uber Clone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64L8Y7FW54;
+				INFOPLIST_FILE = "$(SRCROOT)/Uber Clone/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wael.elmahask.Uber-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F11A80B522E7609300D23A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C9E8DD984842F0AD96BB78 /* Pods-Uber Clone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64L8Y7FW54;
+				INFOPLIST_FILE = "$(SRCROOT)/Uber Clone/Configuration/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wael.elmahask.Uber-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F11A809C22E7608F00D23A2C /* Build configuration list for PBXProject "Uber Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11A80B122E7609300D23A2C /* Debug */,
+				F11A80B222E7609300D23A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F11A80B322E7609300D23A2C /* Build configuration list for PBXNativeTarget "Uber Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F11A80B422E7609300D23A2C /* Debug */,
+				F11A80B522E7609300D23A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F11A809922E7608F00D23A2C /* Project object */;
+}

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AuthorizedVC-->
+        <scene sceneID="eJa-ZF-uwJ">
+            <objects>
+                <viewController storyboardIdentifier="AuthorizedVC" id="btH-St-eHZ" customClass="AuthorizedVC" customModule="Uber_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vDq-4a-aeP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windyRoad" translatesAutoresizingMaskIntoConstraints="NO" id="RYF-pg-SfU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="l5f-pM-I38">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gJ7-ja-bhf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmJ-Jo-JSQ">
+                                            <rect key="frame" x="20" y="30" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="HaV-6d-RIX"/>
+                                                <constraint firstAttribute="width" constant="30" id="J5j-di-fqZ"/>
+                                            </constraints>
+                                            <state key="normal" image="cancelBtn"/>
+                                            <connections>
+                                                <action selector="dismissAuthorizedBtn:" destination="btH-St-eHZ" eventType="touchUpInside" id="h1V-cV-dJo"/>
+                                            </connections>
+                                        </button>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vyc-Nh-KJE">
+                                            <rect key="frame" x="32" y="252" width="350" height="314"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mLt-sk-xf5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="134"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEE-L5-oJD">
+                                                            <rect key="frame" x="117" y="0.0" width="116.5" height="56"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="U" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMP-Kp-4mg">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="36.5" height="56"/>
+                                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="48"/>
+                                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTZ-jz-eYP">
+                                                                    <rect key="frame" x="36.5" y="0.0" width="80" height="56"/>
+                                                                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="48"/>
+                                                                    <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up or login to starting requesting rides with Uber the easiest way to get a lift anywhere!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9q-hD-wNa">
+                                                            <rect key="frame" x="1.5" y="76" width="347.5" height="58"/>
+                                                            <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="18"/>
+                                                            <color key="textColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="350" id="Met-eP-qvP"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ewa-X5-PtT">
+                                                    <rect key="frame" x="0.0" y="154" width="350" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="VEB-8S-BNO"/>
+                                                    </constraints>
+                                                    <segments>
+                                                        <segment title="Passengar"/>
+                                                        <segment title="Driver"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ylc-dh-MKD" customClass="RoundedCornerTextField" customModule="Uber_Clone" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="214" width="350" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="BjQ-Pf-7ct"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FyE-Os-fkb" customClass="RoundedCornerTextField" customModule="Uber_Clone" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="274" width="350" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="54x-UZ-KnX"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-t5-x9t">
+                                            <rect key="frame" x="0.0" y="748" width="414" height="70"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="vLq-jM-D6U"/>
+                                            </constraints>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rwk-uF-zQj" customClass="RoundedShadowButton" customModule="Uber_Clone" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="748" width="374" height="50"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="HM6-i7-nL6"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="26"/>
+                                            <state key="normal" title="Sign up / Login">
+                                                <color key="titleColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="authorizedBtnPressed:" destination="btH-St-eHZ" eventType="touchUpInside" id="lfr-J6-xnY"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Vyc-Nh-KJE" firstAttribute="centerY" secondItem="gJ7-ja-bhf" secondAttribute="centerY" id="04Z-Nc-b9H"/>
+                                        <constraint firstItem="Rwk-uF-zQj" firstAttribute="leading" secondItem="gJ7-ja-bhf" secondAttribute="leading" constant="20" id="6Sk-Bb-J0o"/>
+                                        <constraint firstItem="vmJ-Jo-JSQ" firstAttribute="leading" secondItem="gJ7-ja-bhf" secondAttribute="leading" constant="20" id="DiH-C0-pRK"/>
+                                        <constraint firstItem="Vyc-Nh-KJE" firstAttribute="centerX" secondItem="gJ7-ja-bhf" secondAttribute="centerX" id="F6W-hh-6FC"/>
+                                        <constraint firstAttribute="trailing" secondItem="Rwk-uF-zQj" secondAttribute="trailing" constant="20" id="IGf-R4-7Ur"/>
+                                        <constraint firstItem="vmJ-Jo-JSQ" firstAttribute="top" secondItem="gJ7-ja-bhf" secondAttribute="top" constant="30" id="KAE-oe-6aj"/>
+                                        <constraint firstAttribute="trailing" secondItem="8hx-t5-x9t" secondAttribute="trailing" id="Kqg-pz-Ktq"/>
+                                        <constraint firstAttribute="bottom" secondItem="Rwk-uF-zQj" secondAttribute="bottom" constant="20" id="NVd-2Q-t7b"/>
+                                        <constraint firstAttribute="bottom" secondItem="8hx-t5-x9t" secondAttribute="bottom" id="vRd-Ez-yoP"/>
+                                        <constraint firstItem="8hx-t5-x9t" firstAttribute="leading" secondItem="gJ7-ja-bhf" secondAttribute="leading" id="w2I-u8-JmV"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RYF-pg-SfU" firstAttribute="top" secondItem="Xw1-N2-yvJ" secondAttribute="top" id="5d9-8n-IXn"/>
+                            <constraint firstItem="RYF-pg-SfU" firstAttribute="trailing" secondItem="Xw1-N2-yvJ" secondAttribute="trailing" id="C2c-XB-s4d"/>
+                            <constraint firstItem="l5f-pM-I38" firstAttribute="top" secondItem="Xw1-N2-yvJ" secondAttribute="top" id="FDp-Wq-6aL"/>
+                            <constraint firstItem="RYF-pg-SfU" firstAttribute="top" secondItem="Xw1-N2-yvJ" secondAttribute="top" id="GgN-5C-QTB"/>
+                            <constraint firstItem="l5f-pM-I38" firstAttribute="bottom" secondItem="Xw1-N2-yvJ" secondAttribute="bottom" id="JF3-nX-Hh7"/>
+                            <constraint firstItem="RYF-pg-SfU" firstAttribute="leading" secondItem="Xw1-N2-yvJ" secondAttribute="leading" id="NQQ-vV-OkE"/>
+                            <constraint firstItem="RYF-pg-SfU" firstAttribute="leading" secondItem="Xw1-N2-yvJ" secondAttribute="leading" id="NrU-G5-H4e"/>
+                            <constraint firstItem="RYF-pg-SfU" firstAttribute="trailing" secondItem="Xw1-N2-yvJ" secondAttribute="trailing" id="Qeq-6h-4tR"/>
+                            <constraint firstItem="RYF-pg-SfU" firstAttribute="leading" secondItem="Xw1-N2-yvJ" secondAttribute="leading" id="cwT-Tw-YK9"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="RYF-pg-SfU" secondAttribute="bottom" id="hbV-1p-zwI"/>
+                            <constraint firstItem="l5f-pM-I38" firstAttribute="leading" secondItem="Xw1-N2-yvJ" secondAttribute="leading" id="irf-B9-ZdM"/>
+                            <constraint firstItem="RYF-pg-SfU" firstAttribute="top" secondItem="Xw1-N2-yvJ" secondAttribute="top" id="oOm-EJ-Zhm"/>
+                            <constraint firstAttribute="trailing" secondItem="RYF-pg-SfU" secondAttribute="trailing" id="tTr-nb-A8J"/>
+                            <constraint firstItem="RYF-pg-SfU" firstAttribute="bottom" secondItem="Xw1-N2-yvJ" secondAttribute="bottom" id="w2K-7n-w27"/>
+                            <constraint firstItem="Xw1-N2-yvJ" firstAttribute="trailing" secondItem="l5f-pM-I38" secondAttribute="trailing" id="wiU-uV-zds"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xw1-N2-yvJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="authorizedBtnPressed" destination="Rwk-uF-zQj" id="QTQ-Sw-Btq"/>
+                        <outlet property="emailField" destination="ylc-dh-MKD" id="PoA-2a-eoi"/>
+                        <outlet property="passwordField" destination="FyE-Os-fkb" id="Rwx-cm-tM6"/>
+                        <outlet property="segmentedBtnControl" destination="Ewa-X5-PtT" id="DPh-uC-Qn4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6d-rS-JvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-181.15942028985509" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cancelBtn" width="32" height="31"/>
+        <image name="windyRoad" width="2992" height="2000"/>
+    </resources>
+</document>
